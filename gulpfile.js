@@ -73,7 +73,7 @@ gulp.task('lint', function(){
 //Watches for html and js changes and reloads the app
 gulp.task('watch', function(){
 	gulp.watch(config.paths.html, ['html']);
-	gulp.watch(config.path.js, ['js', 'lint']);
+	gulp.watch(config.paths.js, ['js', 'lint']);
 });
 
 gulp.task('default', ['html', 'js', 'css', 'lint', 'open', 'watch']);
